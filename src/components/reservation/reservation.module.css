@@ -1,0 +1,28 @@
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
+select,
+.submitBtn,
+.date {
+  width: 240px;
+  height: 34px;
+  margin: 0 18px 0 18px;
+  font-size: 20px;
+  color: rgb(78, 77, 77);
+  cursor: pointer;
+}
+.submitBtn {
+  background-color: #eccc68;
+  color: white;
+  border: none;
+}
+.selectBox {
+  margin-bottom: 30px;
+}

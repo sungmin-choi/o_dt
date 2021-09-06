@@ -1,0 +1,15 @@
+.divideLine {
+  width: 100%;
+  border-top: 8px solid #02943f;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  width: 300px;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #02943f;
+}

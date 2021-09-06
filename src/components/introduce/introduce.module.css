@@ -1,0 +1,29 @@
+.introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.logoName {
+  color: #02943f;
+  font-family: "Azeret Mono", monospace;
+}
+.address,
+.openTime {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 20px;
+}
+.map {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 20px;
+}

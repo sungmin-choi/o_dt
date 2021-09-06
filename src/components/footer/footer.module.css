@@ -1,0 +1,30 @@
+.footer {
+  padding: 6px;
+  background-color: #02943f;
+  height: 100px;
+  text-align: center;
+  color: azure;
+  padding-bottom: 20px;
+}
+.snsBox {
+  margin-top: 10px;
+}
+.facebook {
+  color: azure;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.facebook:hover {
+  color: #3867d6;
+}
+.instagram {
+  margin-left: 17px;
+  color: azure;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.instagram:hover {
+  color: rgb(221, 42, 123);
+}
