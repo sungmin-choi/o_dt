@@ -9,8 +9,7 @@
   font-weight: 700;
 }
 select,
-.submitBtn,
-.date {
+.submitBtn {
   width: 240px;
   height: 34px;
   margin: 0 18px 0 18px;
@@ -25,4 +24,13 @@ select,
 }
 .selectBox {
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.date {
+  width: 230px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(80, 78, 78);
+  cursor: pointer;
 }
