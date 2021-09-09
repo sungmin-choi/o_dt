@@ -7,6 +7,7 @@ import DivideLine from './components/divideLine/divideLine';
 import Introduce from './components/introduce/introduce';
 import Reservation from './components/reservation/reservation';
 import Menu from './components/menu/menu';
+import Blog from './components/blog/blog';
 function App({Kakao}) {
   return (
     <>
@@ -20,6 +21,8 @@ function App({Kakao}) {
     <Menu/>
     <DivideLine title={`매장 소개`}/>
     <Introduce Kakao={Kakao}/>
+    <DivideLine title={`블로그`}/>
+    <Blog/>
     <Footer/>
     </>
   );

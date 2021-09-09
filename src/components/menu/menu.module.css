@@ -55,14 +55,13 @@
 .snackMenu {
   width: 60%;
   border-top: 6px solid #02943f;
-  border-bottom: 6px solid #02943f;
   padding: 7px 10px 8px 10px;
   display: flex;
   justify-content: center;
 }
 .beerList {
   padding-top: 10px;
-  width: 40%;
+  width: 60%;
   padding: 10px;
   text-align: right;
 }

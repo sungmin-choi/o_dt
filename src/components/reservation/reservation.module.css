@@ -16,6 +16,16 @@ select,
   font-size: 20px;
   color: rgb(78, 77, 77);
   cursor: pointer;
+  margin-bottom: 10px;
+}
+input {
+  width: 233px;
+  height: 34px;
+  margin: 0 18px 0 18px;
+  font-size: 20px;
+  color: rgb(78, 77, 77);
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .submitBtn {
   background-color: #eccc68;
@@ -25,12 +35,17 @@ select,
 .selectBox {
   margin-bottom: 30px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-right: 90px;
 }
 .date {
-  width: 230px;
+  width: 232px;
   height: 30px;
   font-size: 20px;
   color: rgb(80, 78, 78);
   cursor: pointer;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
 }

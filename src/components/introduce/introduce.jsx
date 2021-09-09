@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const Introduce = ({Kakao}) => {
     useEffect(()=>{
         Kakao.getMap();
-    },[])
+    },[Kakao])
     return(
         <section className={styles.introduce}>
             <p className={styles.title}><span className={styles.logoName}>{`o'dt`}</span>&nbsp;으로 오세요!</p>

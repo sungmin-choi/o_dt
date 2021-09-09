@@ -26,11 +26,11 @@ const Gallery = (props) => {
                 <img src="/image/7.jpg" alt="" />
                 </div>
             <div className={style.navigation}>
-                <label for="r1" className={style.bar}></label>
-                <label for="r2" className={style.bar}></label>
-                <label for="r3" className={style.bar}></label>
-                <label for="r4" className={style.bar}></label>
-                <label for="r5" className={style.bar}></label>
+                <label htmlFor="r1" className={style.bar}></label>
+                <label htmlFor="r2" className={style.bar}></label>
+                <label htmlFor="r3" className={style.bar}></label>
+                <label htmlFor="r4" className={style.bar}></label>
+                <label htmlFor="r5" className={style.bar}></label>
             </div>
                 
             </div>
