@@ -14,17 +14,17 @@ const Reservation = (props) => {
             <div className={styles.selectBox}>
             <DatePicker className={styles.date} selected={startDate} onChange={(date) => setStartDate(date)}
             placeholderText="날짜" />
-            <select className={styles.time}>
-                <option selected>예약시간</option>
-                <option defaultValue>옵션1</option>
-                <option defaultValue>옵션2</option>
-                <option defaultValue>옵션3</option>
+            <select   className={styles.time}>
+                <option value="default" selected>예약시간</option>
+                <option >옵션1</option>
+                <option >옵션2</option>
+                <option >옵션3</option>
             </select>
-            <select className={styles.people}>
-                <option selected>예약인원</option>
-                <option defaultValue>옵션1</option>
-                <option defaultValue>옵션2</option>
-                <option defaultValue>옵션3</option>
+            <select  className={styles.people}>
+                <option value="default" selected>예약인원</option>
+                <option >옵션1</option>
+                <option >옵션2</option>
+                <option >옵션3</option>
             </select>
             <input  type="text" placeholder="성함" />
             <input  type="text" placeholder="전화번호" />

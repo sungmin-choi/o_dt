@@ -1,17 +1,14 @@
-import axios from "axios";
-import { Cheerio } from "cheerio";
+const axios = require("axios");
 
-async function getHTML() {
+
+class Scraper{
+  async getHTML() {
     try {
-      return await axios.get("https://place.map.kakao.com/453150489");
+      return await axios.get("https://search.naver.com/search.naver?where=blog&sm=tab_viw.blog&query=%EA%B0%95%EB%AC%B8%EB%96%A1%EA%B0%88%EB%B9%84&nso=");
     } catch (error) {
       console.error(error);
     }
-  }
+   }
+}
 
-getHTML().then(html=>{
-    let title=[];
-    const $=Cheerio.load(html.data);
-    const bodyTitle = $("h2.tit_location");
-    return bodyTitle;
-}).then(res=>console.log(res));
+export default Scraper

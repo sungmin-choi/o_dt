@@ -9,7 +9,7 @@ const Home = (props) => {
                 <span className={styles.description}>퓨전 해산물 레스토랑 <br />싱그러운  메뉴들로 분위기 있는 감성포차</span>
                 <span className={styles.description2}>#강문오듯 #강릉오듯 #감성포차</span>
             </div>
-            <button className={styles.resbtn}>예약하기</button>
+            <button className={styles.resbtn}>매장소개</button>
         </main>
     )
 }
