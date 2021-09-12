@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.module.css';
 import App from './app';
 import Kakao from './service/kakao';
-import Scraper from './service/scraper';
-const kakao = new Kakao();
-const scraper = new Scraper();
 
+
+const kakao = new Kakao();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App Kakao={kakao} scraper={scraper} />
+    <App Kakao={kakao} />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -8,36 +8,14 @@ import Introduce from './components/introduce/introduce';
 import Menu from './components/menu/menu';
 import Blog from './components/blog/blog';
 import { useEffect, useState } from 'react';
-const cheerio =require('cheerio');
-function App({Kakao,scraper}) {
+
+function App({Kakao}) {
   const [blogData,setBlogData]=useState();
   useEffect(()=>{
-    scraper.getHTML()
-    .then(html=>{
-      let dataList = [];
-      const $ = cheerio.load(html.data);
-      const bodyList = $("ul.lst_total").children("li.bx");
-  
-      bodyList.each(function(i, elem) {
-          dataList[i] = {
-            title: $(this)
-              .find("a.total_tit")
-              .text(),
-          description:$(this)
-          .find("div.dsc_txt")
-          .text(),
-          link:$(this)
-          .find("a.total_tit")
-          .attr("href"),
-          img:$(this)
-          .find("img.thumb")
-          .attr("src")
-          
-          };
-        });
-        return dataList;
-  });
-  },[scraper])
+    fetch('http://localhost:3001/api')
+    .then(res=>res.json())
+    .then(data=>console.log(data));
+  },[])
   return (
     <>
     <header>
