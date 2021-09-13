@@ -10,11 +10,11 @@ import Blog from './components/blog/blog';
 import { useEffect, useState } from 'react';
 
 function App({Kakao}) {
-  const [blogData,setBlogData]=useState();
+  const [blogData,setBlogData]=useState([]);
   useEffect(()=>{
     fetch('http://localhost:3001/api')
     .then(res=>res.json())
-    .then(data=>console.log(data));
+    .then(data=>setBlogData(data));
   },[])
   return (
     <>
@@ -27,7 +27,7 @@ function App({Kakao}) {
     <DivideLine title={`매장 소개`}/>
     <Introduce Kakao={Kakao}/>
     <DivideLine title={`블로그`}/>
-    <Blog/>
+    <Blog blogData={blogData}/>
     <Footer/>
     </>
   );
