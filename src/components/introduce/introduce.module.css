@@ -23,6 +23,7 @@
   font-size: 20px;
 }
 .map {
+  z-index: -1;
   width: 600px;
   height: 300px;
   margin-bottom: 20px;

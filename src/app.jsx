@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 function App({Kakao}) {
   const [blogData,setBlogData]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:3001/api')
+    fetch('https://odtserver.herokuapp.com/api')
     .then(res=>res.json())
     .then(data=>setBlogData(data));
   },[])
@@ -22,11 +22,17 @@ function App({Kakao}) {
     <Header/>
     </header>
     <Home/>
+    <div className="" id="menuPos">
     <DivideLine title={`메 뉴`}/>
+    </div>
     <Menu/>
+    <div className="" id="introducePos">
     <DivideLine title={`매장 소개`}/>
+    </div>
     <Introduce Kakao={Kakao}/>
+    <div className="" id="blogPos">
     <DivideLine title={`블로그`}/>
+    </div>
     <Blog blogData={blogData}/>
     <Footer/>
     </>

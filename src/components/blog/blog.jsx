@@ -3,15 +3,16 @@ import React from 'react';
 import BlogItem from '../blogItem/blogItem';
 
 const Blog = ({blogData}) =>{
-    console.log(blogData);
     return(
-        <section className={styles.containner}>
+        <div className={styles.containner}>
+        <section className={styles.blog}>
         {
-            blogData.map((ele)=>{
-                return <BlogItem blogItem={ele}/>
+            blogData.map((ele,idx)=>{
+                return <BlogItem key={idx} blogItem={ele}/>
             })
         }
         </section>
+        </div>
     )
 }
 
