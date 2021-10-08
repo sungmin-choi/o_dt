@@ -7,6 +7,7 @@ import DivideLine from './components/divideLine/divideLine';
 import Introduce from './components/introduce/introduce';
 import Menu from './components/menu/menu';
 import Blog from './components/blog/blog';
+import Reservation from './components/reservation/reservation';
 import { useEffect, useState } from 'react';
 
 function App({Kakao}) {
@@ -26,6 +27,10 @@ function App({Kakao}) {
     <DivideLine title={`메 뉴`}/>
     </div>
     <Menu/>
+    <div className="" id="reservation">
+    <DivideLine title={`예 약`}/>
+    </div>
+    <Reservation title={`예 약`}/>
     <div className="" id="introducePos">
     <DivideLine title={`매장 소개`}/>
     </div>

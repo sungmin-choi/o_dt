@@ -49,3 +49,15 @@ input {
 .container {
   display: flex;
 }
+.N {
+  font-size: 24px;
+}
+.rsBtn {
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #5ee88c;
+  color: aliceblue;
+  width: 270px;
+  height: 47px;
+  border: 1px solid #5ee88c;
+}

@@ -14,6 +14,8 @@ const Header = (props) => {
             location = document.querySelector("#menuPos").offsetTop;
         }else if(target==="blogPos"){
             location = document.querySelector("#blogPos").offsetTop;
+        }else if(target==="reservation"){
+            location = document.querySelector("#reservation").offsetTop;
         }
         window.scrollTo({top:location - menuHeight+2, behavior:'smooth'});
     }
@@ -24,6 +26,7 @@ const Header = (props) => {
         <img className={styles.logo} src='/logo.jpg' alt="logo"/>
         <ul className={styles.navbar}>
             <li onClick={handlePos} value="homePos" className={styles.home}>홈</li>
+            <li onClick={handlePos} value="reservation" className={styles.reservation}>예 약</li>
             <li onClick={handlePos} value="introducePos" className={styles.introduce}>매장소개</li>
             <li onClick={handlePos} value="menuPos" className={styles.menu}>메 뉴</li>
             <li onClick={handlePos} value="blogPos" className={styles.blog}>블로그</li>
